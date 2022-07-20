@@ -1,42 +1,4 @@
-<nav>
-  <img src="https://synergycodes.com/wp-content/themes/synergycodes/includes/img/logo.svg" alt="Synergy Codes" height="40" width="110">
-</nav>
+<app-nav-bar></app-nav-bar>
 <section>
-  <div class="filters-container">
-    <h4>Filters</h4>
-    <mat-form-field appearance="fill">
-      <mat-label>Select role</mat-label>
-      <mat-select
-        (selectionChange)="selectionChange($event)"
-      >
-        <mat-option>All</mat-option>
-        <mat-option *ngFor="let value of values" [value]="value">
-          {{getRoleDescription(value)}}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
-  </div>
-  <div>
-    <mat-grid-list cols="4" rowHeight="2:1">
-      <ng-container *ngFor="let item of users">
-        <mat-grid-tile>    
-          <mat-card class="user-tile user-tile--indicator"
-            ngClass="{{getIndicatorColor(item.role)}}"
-          >
-            <mat-card-header>
-              <mat-card-title>{{getRoleDescription(item.role)}}</mat-card-title>
-            </mat-card-header>
-            <mat-card-content>
-              <div class="user-tile__content">
-                <div class="mat-card-avatar user-avatar"></div>
-                <div>
-                  {{item.name}} {{item.surname}}
-                </div>
-              </div>
-            </mat-card-content>
-          </mat-card>
-        </mat-grid-tile>
-      </ng-container>
-    </mat-grid-list>
-  </div>
+    <app-users-container></app-users-container>
 </section>

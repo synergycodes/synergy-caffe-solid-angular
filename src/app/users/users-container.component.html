@@ -1,0 +1,13 @@
+<app-filters
+    [values]="values"
+    (valueChange)="selectionChange($event)"
+></app-filters>
+<div>
+    <mat-grid-list cols="4" rowHeight="2:1">
+        <mat-grid-tile *ngFor="let item of users">    
+            <app-user-card
+                [item]="item"
+            ></app-user-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
