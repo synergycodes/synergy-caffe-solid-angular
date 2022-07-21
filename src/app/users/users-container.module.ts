@@ -3,7 +3,7 @@ import { NgModule } from "@angular/core";
 import { MatCardModule } from "@angular/material/card";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { MatSelectModule } from "@angular/material/select";
-import { FiltersContainerComponent } from "./components/filters/filters.component";
+import { FiltersContainerComponent } from "./containers/filters/filters.component";
 import { UserCardComponent } from "./components/user-card/user-card.component";
 import { UsersContainerComponent } from "./users-container.component";
 

@@ -3,10 +3,10 @@
     <mat-form-field appearance="fill">
         <mat-label>Select role</mat-label>
         <mat-select
-            (selectionChange)="valueChange.emit($event)"
+            (selectionChange)="valueChange($event)"
         >
             <mat-option>All</mat-option>
-            <mat-option *ngFor="let value of values" [value]="value">
+            <mat-option *ngFor="let value of (values$ | async)" [value]="value">
                 {{getRoleDescription(value)}}
             </mat-option>
         </mat-select>
