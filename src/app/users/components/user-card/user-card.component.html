@@ -1,9 +1,10 @@
 <mat-card 
-    class="user-card user-card--indicator"
-    ngClass="{{getIndicatorColor(item?.role)}}"
+    class="user-card user-card"
+    roleIndicator 
+    [role]="item?.role"
 >
     <mat-card-header>
-        <mat-card-title>{{getRoleDescription(item?.role)}}</mat-card-title>
+        <mat-card-title>{{item?.role | roleDescription}}</mat-card-title>
     </mat-card-header>
     <mat-card-content>
         <div class="user-card__content">

@@ -7,7 +7,7 @@
         >
             <mat-option>All</mat-option>
             <mat-option *ngFor="let value of (values$ | async)" [value]="value">
-                {{getRoleDescription(value)}}
+                {{value | roleDescription}}
             </mat-option>
         </mat-select>
     </mat-form-field>

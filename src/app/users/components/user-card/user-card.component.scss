@@ -16,22 +16,6 @@ mat-card-content {
     width: 70%;
     height: 50%;
 
-    &--indicator {
-        border-left: gray solid 9px;
-    }
-        
-    &--indicator.purple {
-        border-left-color: #622376;
-    }
-
-    &--indicator.blue {
-        border-left-color: #00C9BA;
-    }
-
-    &--indicator.green {
-        border-left-color: #49817B;
-    }
-
     &__content {
         display: flex;
         align-content: center;

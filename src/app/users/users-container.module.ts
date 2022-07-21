@@ -6,12 +6,16 @@ import { MatSelectModule } from "@angular/material/select";
 import { FiltersContainerComponent } from "./containers/filters/filters.component";
 import { UserCardComponent } from "./components/user-card/user-card.component";
 import { UsersContainerComponent } from "./users-container.component";
+import { RoleDescriptionPipe } from "./pipes/role-description.pipe";
+import { RoleIndicatorDirective } from "./directives/role-indicator.directive";
 
 @NgModule({
     declarations: [
         UserCardComponent,
         UsersContainerComponent,
-        FiltersContainerComponent
+        FiltersContainerComponent,
+        RoleIndicatorDirective,
+        RoleDescriptionPipe
     ],
     imports: [
         CommonModule,
