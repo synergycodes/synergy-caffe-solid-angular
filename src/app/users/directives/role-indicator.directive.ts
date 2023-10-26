@@ -10,10 +10,10 @@ import { Role } from "../users.interfaces";
 })
 export class RoleIndicatorDirective {
 
-    @Input()
+    @Input('roleIndicator')
     set role(role: Role | undefined) {
-        this.backgroundColor = role 
-            ? UsersData.roleToDetailsMap.get(role)?.color 
+        this.backgroundColor = role
+            ? UsersData.roleToDetailsMap.get(role)?.color
             : '';
     }
 
